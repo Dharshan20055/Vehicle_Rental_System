@@ -1,0 +1,5 @@
+INSERT INTO vehicles (brand, model, type, fuel_type, seating_capacity, price_per_day, availability_status, image_url, description, insurance_status, registration_number) VALUES
+('Toyota', 'Fortuner', 'CAR', 'DIESEL', 7, 3500.00, 'AVAILABLE', 'https://images.unsplash.com/photo-1594511413444-2454b6f79020?auto=format&fit=crop&q=80&w=600', 'Premium SUV for off-roading and family trips.', 'ACTIVE', 'KA01AB1234'),
+('Royal Enfield', 'Himalayan', 'BIKE', 'PETROL', 2, 1200.00, 'AVAILABLE', 'https://images.unsplash.com/photo-1558981403-c5f9899a28bc?auto=format&fit=crop&q=80&w=600', 'Adventure tourer bike for long rides.', 'ACTIVE', 'KA02XY5678'),
+('Hyundai', 'Creta', 'CAR', 'PETROL', 5, 2500.00, 'AVAILABLE', 'https://images.unsplash.com/photo-1542362567-b055002b91f4?auto=format&fit=crop&q=80&w=600', 'Compact SUV with advanced features.', 'ACTIVE', 'TN01PQ9012'),
+('Tata', 'Winger', 'VAN', 'DIESEL', 12, 5000.00, 'MAINTENANCE', 'https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&q=80&w=600', 'Spacious van for large groups.', 'ACTIVE', 'KL03LM3456');
