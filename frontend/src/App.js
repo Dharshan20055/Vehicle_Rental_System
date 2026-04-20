@@ -1,24 +1,25 @@
-import logo from './logo.svg';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import BookingCheckout from './components/BookingCheckout';
+import BookingDashboard from './components/BookingDashboard';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Navbar />
+      <Routes>
+        {/* Redirect root to book the mocked vehicle id 1 */}
+        <Route path="/" element={<Navigate to="/book/1" />} />
+        
+        {/* Booking & Payment Stepper */}
+        <Route path="/book/:vehicleId" element={<BookingCheckout />} />
+        
+        {/* Dashboard */}
+        <Route path="/dashboard" element={<BookingDashboard />} />
+      </Routes>
+    </Router>
   );
 }
 
